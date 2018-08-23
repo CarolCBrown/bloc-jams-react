@@ -34,8 +34,13 @@ class Album extends Component {
 
            <tbody>
            {
-            this.state.album.songs.map( (song, index) => 
-             <tr className="song" key={index}> </tr>
+            this.state.album.songs.map( song, index) => 
+             <tr className="song" key={index}> 
+
+                <td className="song-actions"> </td>
+                <td className="song-title">{song.title}</td>
+                <td className="song-duration">{song.duration}</td>
+             </tr>
            	)
            }  
                	
