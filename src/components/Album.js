@@ -60,11 +60,11 @@ class Album extends Component {
 
            <tbody>
            {
-<<<<<<< HEAD
+
             this.state.album.songs.map( (song, index) => 
              <tr className="song" key={index} onClick={() => this.handleSongClick(song) } >
               <td className="song-actions"> </td>
-=======
+
 
             this.state.album.songs.map( (song, index) => 
              <tr className="song" key={index} onClick={() => this.handleSongClick(song) } onMouseEnter={() => this.setState({isHovered: index+1})} onMouseLeave={() => this.setState({isHovered: false})} >
@@ -81,7 +81,7 @@ class Album extends Component {
                 </button>
               </td>
 
->>>>>>> audioPBassignment
+
               <td className="song-title">{song.title}</td>
               <td className="song-duration">{song.duration}</td>
 
