@@ -81,9 +81,9 @@ class Album extends Component {
 
               </tr>
 
-           	)
+            )
            }  
-               	
+                
             </tbody>
                   </table>
        </section>
