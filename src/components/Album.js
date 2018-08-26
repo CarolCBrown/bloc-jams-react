@@ -15,11 +15,14 @@ class Album extends Component {
        currentSong: album.songs[0],
        currentTime: 0,
        duration: album.songs[0].duration, 
+       volume: .5,
        isPlaying: false,
        isHovered: false
      };
       this.audioElement = document.createElement('audio');
       this.audioElement.src= album.songs[0].audioSrc;
+      this.audioElement.volume= this.state.volume;
+      
    }
 
    componentDidMount() {
@@ -30,15 +33,18 @@ class Album extends Component {
        durationchange: e => {
          this.setState({ duration: this.audioElement.duration });
        }
+
      };
      this.audioElement.addEventListener('timeupdate', this.eventListeners.timeupdate);
      this.audioElement.addEventListener('durationchange', this.eventListeners.durationchange);
+     
    }
 
     componentWillUnmount() {
      this.audioElement.src = null;
      this.audioElement.removeEventListener('timeupdate', this.eventListeners.timeupdate);
      this.audioElement.removeEventListener('durationchange', this.eventListeners.durationchange);
+     
    }
 
     play() {
@@ -85,7 +91,27 @@ class Album extends Component {
      const newTime = this.audioElement.duration * e.target.value;
      this.audioElement.currentTime = newTime;
      this.setState({ currentTime: newTime });
-   }
+
+ }
+
+  formatTime(seconds) {
+    if (isNaN(seconds)) { return "-:--"; }
+    const wholeSeconds = Math.floor(seconds);
+    const minutes = Math.floor(wholeSeconds / 60);
+    const remainingSeconds = wholeSeconds % 60;
+    let output = minutes + ':';
+    if (remainingSeconds < 10) {
+      output += '0';
+    }
+    output += remainingSeconds;
+    return output;
+  }
+
+    handleVolumeChange(e) {
+      const newVolume = e.target.value;
+      this.audioElement.currentVolume = newVolume;
+      this.setState({ currentVolume: newVolume });
+    }
 
    render() {
      return (
@@ -142,6 +168,8 @@ class Album extends Component {
            handlePrevClick={() => this.handlePrevClick()}
            handleNextClick={() => this.handleNextClick()}
           handleTimeChange={(e) => this.handleTimeChange(e)}
+          formatTime={(e) => this.formatTime(e)}
+          handleVolumeChange={(e) => this.handleVolumeChange(e)}
          />
        </section>
      );
