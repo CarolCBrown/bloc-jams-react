@@ -27,17 +27,17 @@ import React, { Component } from 'react';
 
 
          <section id="time-control">
-           <div className="current-time">{this.props.formatTime(this.props.currentTime)}</div>
+           <div className="current-time">{this.props.formattedTime}</div>
            <input 
              type="range" 
              className="seek-bar" 
              value={(this.props.currentTime / this.props.duration) || 0} 
              max="1" 
              min="0" 
-             step="0.01" 
+             step="0.001" 
              onChange={this.props.handleTimeChange}
            />   
-           <div className="total-time">{this.props.formatTime(this.props.duration)}</div>
+           <div className="time-left">{this.props.formattedTimeLeft}</div>
          </section>
 
 
@@ -55,14 +55,14 @@ import React, { Component } from 'react';
 
 
          <section id="volume-control">
-           <div className="icon ion-volume-low">{this.props.handleVolumeChange}</div>
+           <div className="volume-icon ion-volume-medium"></div>
          <input
          type="range"
-         className="seek-bar"
-         value={this.props.volume}
+         className="volume-bar"
+         value={this.props.currentVolume}
          max="1"
          min="0"
-         step="0.001"
+         step="0.01"
          onChange={this.props.handleVolumeChange}
          />
         
