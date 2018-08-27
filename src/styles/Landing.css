@@ -5,39 +5,40 @@ body {
 .selling-points {
 	display: flex;
 	justify-content: center;
+	width: 100%;
 }
 
 #firstbox {
-	background-color: #F9E5F0;
+	
 	
 
-	border-color: #CE217D;
+	
 	float: left;
-	width: 350px;
+	width: 500px;
 	height: 350px;
-	margin: 15px;
+	margin: 20px;
 }
 
 #secondbox {
-	background-color: #F9E5F0;
+	
 	
 
-	border-color: #CE217D;
+	
 	float: left;
-	width: 350px;
+	width: 500px;
 	height: 350px;
-	margin: 15px;
+	margin: 20px;
 	
 }
 
 #thirdbox {
-	background-color: #F9E5F0;
+	
 
-	border-color: #CE217D;
+	
 	float: left;
-	width: 350px;
+	width: 500px;
 	height: 350px;
-	margin: 15px;
+	margin: 20px;
 
 }
 
