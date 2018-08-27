@@ -1,0 +1,72 @@
+body {
+	background-color: #F9EEF8;
+}
+
+.selling-points {
+	display: flex;
+	justify-content: center;
+}
+
+#firstbox {
+	background-color: #F9E5F0;
+	
+
+	border-color: #CE217D;
+	float: left;
+	width: 350px;
+	height: 350px;
+	margin: 15px;
+}
+
+#secondbox {
+	background-color: #F9E5F0;
+	
+
+	border-color: #CE217D;
+	float: left;
+	width: 350px;
+	height: 350px;
+	margin: 15px;
+	
+}
+
+#thirdbox {
+	background-color: #F9E5F0;
+
+	border-color: #CE217D;
+	float: left;
+	width: 350px;
+	height: 350px;
+	margin: 15px;
+
+}
+
+.glyphicon {
+	font-size: 50px;
+	margin-top: 50px;
+	color: #CE217D;
+}
+
+.point-title {
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 35px;
+}
+
+.point-description {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.hero-title {
+	font-family: Impact, Charcoal, sans-serif;
+	color: #CE217D;
+	font-size: 50px;
+	font-family: Impact;
+	font-weight: 200;
+}
+
+.link {
+  text-align: right;
+  color: #CE217D;
+  font-size: 14px;
+  }
