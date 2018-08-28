@@ -1,8 +1,20 @@
 
-nav {
-  font-size:20px;
-  text-align: center;
-}
+ .homelink {
+  color: #CE217D;
+  font-size:25px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin-bottom: 60px;
+ }
+
+ .librarylink {
+  color: #CE217D;
+  font-size: 25px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin-bottom: 60px;
+  margin-left: 10px;
+
+ }
+
 
 .App {
   text-align: center;
@@ -11,6 +23,13 @@ nav {
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
+}
+.bloclogo {
+  text-align: left;
+  color: #CE217D;
+  font-family: Impact, Charcoal, sans-serif;
+  margin-bottom: auto;
+
 }
 
 .banner {
@@ -27,7 +46,7 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -100%);
-  font-size: 5px;
+  font-size: 70px;
   color: #CE217D;
   white-space: nowrap;
   overflow: hidden;
@@ -47,6 +66,8 @@ nav {
 .App-intro {
   font-size: large;
 }
+
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

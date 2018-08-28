@@ -13,7 +13,7 @@ const Landing = () => (
    <section className="landing">
 
      <div className="banner">
-            <img className="banner-img" src='assets/images/music-logo.jpg' alt="Bloc AM Banner" />
+            <img className="banner-img" src='assets/images/music-logo.jpg' alt="Bloc Jams Banner" />
             <h1 className="hero-title"> Turn the music up!</h1>
         </div>
 
