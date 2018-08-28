@@ -1,6 +1,4 @@
-body {
-	background-color: #F9EEF8;
-}
+
 
 .selling-points {
 	display: flex;
@@ -61,7 +59,7 @@ body {
 .hero-title {
 	font-family: Impact, Charcoal, sans-serif;
 	color: #CE217D;
-	font-size: 50px;
+	font-size: 70px;
 	font-family: Impact;
 	font-weight: 200;
 }
