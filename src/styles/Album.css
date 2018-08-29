@@ -1,0 +1,110 @@
+  .album {
+  	display: flex;
+  	width: 100%;
+  	margin-top: 30px;
+  	margin-left: 30px;
+  
+
+  	}
+  	  
+ 
+ #album-cover-art {
+ 	height: 300px;
+ }
+
+#song-list {
+	display: flex;
+	width: 100%;
+	margin-left: 30px;
+	line-height: 40px;
+
+	background-color:white;
+}
+
+.song {
+	cursor: pointer;
+
+}
+
+.album-details {
+	font-size: 13px;
+	align-items: center;
+}
+  /* test 
+
+
+  .background: transparent;
+  color: black;
+  border: none;
+  font-size: 20px;
+}
+
+button:focus {
+  outline: none;
+}
+.song-number {
+	color: black;
+}
+
+.album {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.album-info {
+	width: 20px;
+	background-color: green;
+
+}
+
+.album-details {
+	color: #CE217D;
+	text-align: center;
+	margin-bottom: 20px;
+	
+}
+
+.song {
+	line-height: 10px;
+	cursor: pointer;
+}
+.song-actions {
+	width: 15px;
+	cursor: pointer;
+
+}
+
+.song-duration {
+	width: 15px;
+}
+
+.song-list-container {
+  display: inline-block;
+  width: 65%;
+  margin: auto;
+  padding: 5rem;
+  vertical-align: top;
+}
+
+.artist, #release-info {
+	color: #CE217D;
+	font-weight: 500;
+	margin: 4px;
+}
+
+
+#album-title {
+	font-weight: bolder;
+	font-size: 15px;
+	margin: 4px;
+}
+
+#song-list {
+	color: black;
+	border-collapse: collapse;
+	width: 80%;
+
+}
+
+
+*/
