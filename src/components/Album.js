@@ -68,12 +68,6 @@ class Album extends Component {
    }
    
 
-    handleVolumeChange(e) {
-      const newVolume = e.target.value;
-      this.audioElement.Volume = newVolume;
-      this.setState({ currentVolume: newVolume });
-    }
-
     play() {
       this.audioElement.play();
       this.setState({ isPlaying: true });
